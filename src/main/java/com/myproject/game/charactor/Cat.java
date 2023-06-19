@@ -12,23 +12,26 @@ import javax.swing.Timer;
 
 public class Cat {
     
-    public int x, y, catSize, health;
-    private int jumpHigh = 100;
+    public int x, y, health = 200;
+    static int speed = 90;
+    
+    public Cat() {
+        
+    }
 
-    public Cat(int x, int y, int catSize, int health) {
+    public Cat(int x, int y) {
         this.x = x;
         this.y = y;
-        this.catSize = catSize;
-        this.health = health;
+
     }
     
     public void jump(JPanel game) {
-        this.y -= jumpHigh;
+        this.y -= speed;
         game.repaint();
         Timer timer = new Timer(450, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                y += jumpHigh;
+                y += speed;
                 game.repaint();
             }   
         });

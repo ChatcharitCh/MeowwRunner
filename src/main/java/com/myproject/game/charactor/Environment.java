@@ -11,7 +11,7 @@ import javax.swing.Timer;
 public class Environment {
 
     public int x, y, startX, speed, eType;
-    static int CLOUD = 0, BUILDING = 1;
+    public static int CLOUD = 0, BUILDING = 1;
     private Timer timeMove;
 
     public Environment(int x, int y, JPanel page, int eType, int speed) {
