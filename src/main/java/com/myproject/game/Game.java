@@ -12,8 +12,8 @@ public class Game extends JPanel {
 
     public Game() {
         this.setBounds(0, 0, 1000, 600);
-        this.setFocusable(true);
-        this.setLayout(null);
+        this.setFocusable(true); // focus window
+        this.setLayout(null); // manaul setting layout
     }
     
     @Override
