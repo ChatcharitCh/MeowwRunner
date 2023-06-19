@@ -13,6 +13,8 @@ import javax.swing.JPanel;
 public class Game extends JPanel  implements KeyListener{
 
     Cat cat = new Cat(50, 300, 50);
+    Wave wave = new Wave(800, 300, 30, 40, 30, this);
+    int gameSpeed = 30;
     
     public Game() {
         this.setBounds(0, 0, 1000, 600);
@@ -27,6 +29,8 @@ public class Game extends JPanel  implements KeyListener{
         Graphics2D g2 = (Graphics2D) g;
         g2.setColor(Color.red);
         g2.drawRect(cat.x, cat.y, cat.catSize, 50);
+        g2.setColor(Color.black);
+        g2.drawRect(wave.x, wave.y, wave.width, wave.height);
     }
 
     @Override
