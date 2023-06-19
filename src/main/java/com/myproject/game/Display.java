@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 public class Display extends JFrame {
     // create JFrame
     public Display() {
-        super("my game");
+        super("Meow");
         this.setSize(1000, 600);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocation(300, 200);
