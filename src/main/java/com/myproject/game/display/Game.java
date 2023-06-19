@@ -47,7 +47,7 @@ public class Game extends JPanel implements KeyListener {
             g2.setFont(Element.getFont(30));
             g2.setColor(Color.white);
             g2.drawString("Point : " + point, 750, 40);
-            //--- dog --
+            //--- cat --
             g2.setColor(Color.RED);
             drawDogHealth(g2);
             g2.drawImage(cat.getImage(), cat.x, cat.y, catSize, catSize, null);
@@ -112,7 +112,7 @@ public class Game extends JPanel implements KeyListener {
             cat.health -= 20;
             if (cat.health <= 0) {
                 display.endGame(this.point);
-                cat.health = new cat().health;
+                cat.health = new Cat().health;
                 this.point = 0;
             }
         }

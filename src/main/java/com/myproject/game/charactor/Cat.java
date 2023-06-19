@@ -43,7 +43,7 @@ public class Cat {
     public BufferedImage getImage() {
         BufferedImage image = null;
         try {
-            image = ImageIO.read(new File("img\\cat.png"));
+            image = ImageIO.read(new File("img\\dog.png"));
             return image;
         } catch (Exception e) {
             e.printStackTrace();
