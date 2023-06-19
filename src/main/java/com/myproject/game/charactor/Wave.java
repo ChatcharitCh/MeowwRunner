@@ -1,5 +1,5 @@
 
-package com.myproject.game;
+package com.myproject.game.charactor;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,5 +1,8 @@
 
-package com.myproject.game;
+package com.myproject.game.event;
+
+import com.myproject.game.charactor.Wave;
+import com.myproject.game.charactor.Cat;
 
 
 public class Event {

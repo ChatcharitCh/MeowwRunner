@@ -1,5 +1,5 @@
 
-package com.myproject.game;
+package com.myproject.game.display;
 
 import javax.swing.JFrame;
 

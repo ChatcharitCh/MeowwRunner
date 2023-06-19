@@ -1,2 +1,7 @@
-com\myproject\game\Display.class
-com\myproject\game\Game.class
+com\myproject\game\charactor\Cat$1.class
+com\myproject\game\charactor\Wave$1.class
+com\myproject\game\event\Event.class
+com\myproject\game\charactor\Wave.class
+com\myproject\game\charactor\Cat.class
+com\myproject\game\display\Game.class
+com\myproject\game\display\Display.class

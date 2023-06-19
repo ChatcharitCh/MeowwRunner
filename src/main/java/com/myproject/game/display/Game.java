@@ -1,7 +1,10 @@
 
 
-package com.myproject.game;
+package com.myproject.game.display;
 
+import com.myproject.game.event.Event;
+import com.myproject.game.charactor.Wave;
+import com.myproject.game.charactor.Cat;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
