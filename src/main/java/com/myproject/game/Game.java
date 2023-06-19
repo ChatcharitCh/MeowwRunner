@@ -37,7 +37,7 @@ public class Game extends JPanel  implements KeyListener{
     @Override
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode() == 38 || e.getKeyCode() == 32) {
-            cat.jump();
+            cat.jump(this);
             this.repaint();
         }
     }
