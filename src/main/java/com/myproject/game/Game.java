@@ -15,6 +15,7 @@ public class Game extends JPanel  implements KeyListener{
     Cat cat = new Cat(50, 300, 50);
     Wave wave = new Wave(800, 300, 30, 40, 30, this);
     int gameSpeed = 30;
+    Wave[] waveSet = makeWaveSet(4);
     
     public Game() {
         this.setBounds(0, 0, 1000, 600);
@@ -30,7 +31,18 @@ public class Game extends JPanel  implements KeyListener{
         g2.setColor(Color.red);
         g2.drawRect(cat.x, cat.y, cat.catSize, 50);
         g2.setColor(Color.black);
-        g2.drawRect(wave.x, wave.y, wave.width, wave.height);
+        for (Wave wave : waveSet) {
+            g2.drawRect(wave.x, wave.y, wave.width, wave.height);
+        }   
+    }
+    
+    private Wave[] makeWaveSet(int waveNumber) {
+        Wave[] waveSet = new Wave[waveNumber];
+        for (int i = 0; i < waveNumber; i++) {
+            double waveLocation = 1000 + Math.floor(Math.random() * 1000);
+            waveSet[i] = new Wave((int)waveLocation, 300 , 30, 40, 30, this);
+        }
+        return waveSet;
     }
 
     @Override
