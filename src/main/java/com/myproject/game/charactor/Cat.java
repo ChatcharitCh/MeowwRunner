@@ -36,17 +36,17 @@ public class Cat {
         timer.start();
     }
     
-    // Cat image
-//    public BufferedImage getImage() {
-//        BufferedImage image = null;
-//        try {
-//            image = ImageIO.read(new File("img\\cat.png"));
-//            return image;
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return image;
-//    }
+     //Cat image
+    public BufferedImage getImage() {
+        BufferedImage image = null;
+        try {
+            image = ImageIO.read(new File("img\\cat.png"));
+            return image;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return image;
+    }
     
     
     

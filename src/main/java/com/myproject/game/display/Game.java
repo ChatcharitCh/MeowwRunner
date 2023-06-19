@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 
 public class Game extends JPanel  implements KeyListener{
 
+    
     Cat cat = new Cat(50, 300, 50, 100);
     Wave wave = new Wave(800, 300, 30, 40, 30, this);
     int gameSpeed = 30;
