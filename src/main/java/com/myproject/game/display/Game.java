@@ -16,12 +16,15 @@ import javax.swing.JPanel;
 
 public class Game extends JPanel  implements KeyListener{
 
+    static Display display;
+    private static int base = 400, xStart = 1000;
+    private static int speed = 50, catSize = 60, waveHeight = 50;
     
-    Cat cat = new Cat(50, 300, 50, 100);
-    Wave wave = new Wave(800, 300, 30, 40, 30, this);
-    int gameSpeed = 30;
-    Wave[] waveSet = makeWaveSet(4);
-    long lastPress = 0;
+    private Cat cat = new Cat(100, base - 50);
+    
+    public static void main(String[] arg) {
+		 display = new Display();
+	}
     
     public Game() {
         this.setBounds(0, 0, 1000, 600);
